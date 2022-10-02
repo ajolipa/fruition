@@ -1,0 +1,79 @@
+body {
+	/* font-family:"Petrona"; */
+	background-color:white;
+	line-height:1.6;
+	color:black;
+    /* font-size:14pt; */
+    font-family: "Azo Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+	}
+
+.nav-link {
+    color: black;
+}
+
+.mainHeader {
+    width:100%;
+    text-align:center;
+    background-color: black;
+    color: white;
+    padding:20px;
+}
+
+.content {
+    margin-top:50px;
+}
+
+.definition {
+    /* background-color: rgb(247, 202, 144); */
+    /* color:white; */
+	/* border-radius:2px; */
+	/* border: 2px solid black; */
+	padding-left:15px;
+	padding-top:4px;
+	padding-right:15px;
+	padding-bottom:4px;
+    /* float:left; */
+    width:60%;
+	/* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19); */
+    margin-top:0px;
+    margin-bottom:40px;
+    /* font-family:"Petrona"; */
+    font-size:14pt;
+    text-align:center;
+    background:
+    linear-gradient(to right, black 1px, transparent 1px) 0 0,
+    linear-gradient(to right, black 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, black 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, black 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, black 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, black 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, black 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, black 1px, transparent 1px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 30px 10px;
+}
+
+.definition p {
+    margin:0;
+    padding: 10px 5px 10px 5px;
+}
+
+h3 {
+    font-family:"Tangerine";
+    font-size:40pt;
+}
+
+h5 {
+    font-size:24pt;
+}
+
+.thumbnail {
+    background-color: black;
+}
+
+.thumbnail .caption {
+    color:white;
+}
