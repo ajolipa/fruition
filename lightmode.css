@@ -6,11 +6,15 @@ body {
     /* font-size:14pt; */
     font-family: "Azo Sans", sans-serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
 	}
 
 .nav-link {
-    color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
 }
 
 .mainHeader {
@@ -37,12 +41,12 @@ body {
     /* float:left; */
     width:60%;
 	/* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19); */
-    margin-top:0px;
+    margin-top:20px;
     margin-bottom:40px;
     /* font-family:"Petrona"; */
     font-size:14pt;
     text-align:center;
-    background:
+    /* background:
     linear-gradient(to right, black 1px, transparent 1px) 0 0,
     linear-gradient(to right, black 1px, transparent 1px) 0 100%,
     linear-gradient(to left, black 1px, transparent 1px) 100% 0,
@@ -53,12 +57,17 @@ body {
     linear-gradient(to top, black 1px, transparent 1px) 100% 100%;
 
   background-repeat: no-repeat;
-  background-size: 30px 10px;
+  background-size: 30px 10px; */
+  border-width: 20px 0px;
+  border-image-source: url("border.png");
+  border-image-slice: 0 fill;
+  border-image-outset: 25px;
+  border-image-repeat: stretch;
 }
 
 .definition p {
     margin:0;
-    padding: 10px 5px 10px 5px;
+    padding: 20px 0px;
 }
 
 h3 {
@@ -76,4 +85,24 @@ h5 {
 
 .thumbnail .caption {
     color:white;
+}
+
+.headshot {
+    max-width: 20%;
+    margin: 15px 25px 15px 0px;
+    border-radius:20px 20px 20px 20px;
+    max-height:400px;
+}
+
+.menu {
+    font-style:italic;
+    font-size:larger;
+    line-height:2;
+    text-align: center;
+    max-width: 80%;
+}
+
+.menu ul {
+    list-style:none;
+    margin-top:15px;
 }
