@@ -58,11 +58,11 @@ body {
 
   background-repeat: no-repeat;
   background-size: 30px 10px; */
-  border-width: 20px 0px;
+  /* border-width: 20px 0px;
   border-image-source: url("border.png");
   border-image-slice: 0 fill;
   border-image-outset: 25px;
-  border-image-repeat: stretch;
+  border-image-repeat: stretch; */
 }
 
 .definition p {
@@ -89,8 +89,9 @@ h5 {
 
 .headshot {
     max-width: 20%;
+    min-width: 100px;
     margin: 15px 25px 15px 0px;
-    border-radius:20px 20px 20px 20px;
+    border-radius:8%;
     max-height:400px;
 }
 
