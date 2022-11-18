@@ -121,11 +121,30 @@ h5 {
   font-size:larger;
   font-weight:400;
   font-style:italic;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .signed {
   padding: 0 50px 10px 50px;
+}
+
+.testimonial {
+  float:left;
+  border-width: 2px;
+  border-style:double;
+  width:100%;
+  margin-bottom: 30px;
+  border-radius:0 50px;
+  padding:0 17px;
+  min-height:93%;
+  border-color:black black gray gray; 
+}
+
+.testimonial-right {
+  float:right;
+  text-align:right;
+  border-radius:50px 0;
+  border-color: gray black black gray;
 }
 
 /* photo gallery stuff */
@@ -177,8 +196,8 @@ h5 {
     color: white;
     position: absolute;
     top: 75px;
-    right: 20%;
-    font-size: 35px;
+    right: 8%;
+    font-size: 38px;
     font-weight: bold;
   }
   
@@ -217,12 +236,12 @@ h5 {
   
   /* Position the "next button" to the right */
   .next {
-    right: -50px;
+    right: -80px;
     border-radius: 3px 0 0 3px;
   }
 
   .prev {
-    left: -50px;
+    left: -80px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -297,6 +316,7 @@ h5 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    /* background-image:url('leftarrow.png'); */
   }
   .right {
     position: absolute;

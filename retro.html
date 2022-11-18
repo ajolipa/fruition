@@ -86,10 +86,10 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#photos" class="nav-link">Gallery</a>
+                <a href="#photos" class="nav-link">The Photos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testimonials</a>
+                <a class="nav-link" href="#testimonials">The Testimonials</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#guests">The Guests</a>
@@ -144,7 +144,7 @@
     <div
     class="text-center">
 <img src="logo_vegas_black.png" alt="Fruition Logo" style="max-height:400px;" class="img-fluid mx-auto">
-<p style="font-size:larger; margin-bottom:30px;">FRIDAY, OCTOBER 28, 8:00PM</p>
+<p style="font-size:larger; margin-bottom:30px;">FRIDAY, OCTOBER 28, 2022</p>
 </div>
 <div id="definition">
     <!-- definition of fruition -->
@@ -158,12 +158,14 @@
 <!-- photo gallery -->
 <a name="photos"></a>
 <div id="photos" class="content">
-  <h3>Photo Gallery</h3>
+  <h3>The Photos</h3>
   <hr>
   <div class="row">
     <div class="col-12">
       <div class="cover">
-        <button class="left" onclick="leftScroll()">&#10094;</button>
+        <button class="left" onclick="leftScroll()">
+            <img src="leftarrow.png" alt="" style="max-height:50px;">
+        </button>
 <div class="gallery">
 
   
@@ -192,7 +194,7 @@
 
 
 </div>
-<button class="right" onclick="rightScroll()">&#10095;</button>
+<button class="right" onclick="rightScroll()"><img src="rightarrow.png" alt="" style="max-height:50px;"></button>
 </div>
 
 <div id="myModal" class="modal mx-auto">
@@ -255,8 +257,8 @@
     </div>
   
     
-    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-    <span class="next" onclick="plusSlides(1)">&#10095;</span>
+    <span class="prev" onclick="plusSlides(-1)"><img src="leftarrowwhite.png" alt="" style="max-height:100px;"></span>
+    <span class="next" onclick="plusSlides(1)"><img src="rightarrowwhite.png" alt="" style="max-height:100px;"></span>
 
 
     <!-- <div class="column">
@@ -281,14 +283,19 @@
 <!-- testimonials -->
 <a name="testimonials"></a>
 <div id="testimonials" class="content">
-  <h3>Testimonials</h3>
+  <h3>The Testimonials</h3>
   <hr>
   <div class="row">
-    <div class="col-12">
-      <p class="quote">"Cedric and the entire Fruition crew deliver on an unforgettable experience. A meal where every single dish tells a story and leaves you completely satisfied. A dining experience you will never forget, filled with conversation and joy."</p>
-      <p class="signed">&#8213;Justin Waterfield</p>
-      <p class="quote">"This dream duo of Magic and food artistry create something that neither could on their own. Between the delightful food, exquisite presentation, and excellent drink pairings, it made for a special evening over tableside chatter about all things Magic. Don't miss this lifelong journey of theirs come to fruition - your taste buds will thank you!"</p>
-      <p class="signed">&#8213;Gavin Verhey</p>
+    <div class="col-xl-6">
+      <div class="testimonial">
+          <p class="quote">"Cedric and the entire Fruition crew deliver on an unforgettable experience. A meal where every single dish tells a story and leaves you completely satisfied. A dining experience you will never forget, filled with conversation and joy."</p>
+          <p class="signed">&#8213;Justin Waterfield</p>
+      </div></div>
+      <div class="col-xl-6">
+      <div class="testimonial testimonial-right">
+          <p class="quote">"This dream duo of Magic and food artistry create something that neither could on their own. Between the delightful food, exquisite presentation, and excellent drink pairings, it made for a special evening over tableside chatter about all things Magic. Don't miss this lifelong journey of theirs come to fruition - your taste buds will thank you!"</p>
+          <p class="signed">&#8213;Gavin Verhey</p>
+      </div>
     </div>
   </div>
 </div>
@@ -489,11 +496,11 @@
 
   function leftScroll() {
         const left = document.querySelector(".gallery");
-        left.scrollBy(-200, 0);
+        left.scrollBy(-300, 0);
       }
       function rightScroll() {
         const right = document.querySelector(".gallery");
-        right.scrollBy(200, 0);
+        right.scrollBy(300, 0);
       }
   </script>
 
