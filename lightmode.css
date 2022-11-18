@@ -138,6 +138,9 @@ h5 {
   padding:0 17px;
   min-height:93%;
   border-color:black black gray gray; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonial-right {
