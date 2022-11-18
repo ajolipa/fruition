@@ -252,6 +252,10 @@ h5 {
   .next:hover {
     background-color: rgba(110, 108, 108, 0.8);
   }
+
+  .pointer {
+    max-height:100px;
+  }
   
   /* Number text (1/3 etc) */
   .numbertext {
@@ -340,3 +344,19 @@ h5 {
     user-select: none;
     -webkit-user-select: none;
   }
+
+    /* change arrow position on mobile */
+    @media only screen and (max-width: 768px) {
+      .next {
+        right: -50px;
+      }
+      .prev {
+        left: -50px;
+      }
+      .close {
+        right:0;
+      }
+      .pointer {
+        max-height:70px;
+      }
+    }
