@@ -86,10 +86,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#photos" class="nav-link">The Photos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">The Testimonials</a>
+                <a href="#about" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#guests">The Guests</a>
@@ -105,6 +102,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#location">The Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Join Us</a>
               </li>
             </ul>
           </div>
@@ -144,7 +144,7 @@
     <div
     class="text-center">
 <img src="logo_vegas_black.png" alt="Fruition Logo" style="max-height:400px;" class="img-fluid mx-auto">
-<p style="font-size:larger; margin-bottom:30px;">FRIDAY, OCTOBER 28, 2022</p>
+<p style="font-size:larger; margin-bottom:30px;">FRIDAY, OCTOBER 28, 8:00PM</p>
 </div>
 <div id="definition">
     <!-- definition of fruition -->
@@ -155,153 +155,8 @@
       </div>
 </div>
 
-<!-- photo gallery -->
-<a name="photos"></a>
-<div id="photos" class="content">
-  <h3>The Photos</h3>
-  <hr>
-  <div class="row">
-    <div class="col-12">
-      <div class="cover">
-        <button class="left" onclick="leftScroll()">
-            <img src="leftarrow.png" alt="" style="max-height:50px;">
-        </button>
-<div class="gallery">
-
-  
-    <img src="photos/lv1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  
-    <img src="photos/lv2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
- 
-    <img src="photos/lv3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-
-    <img src="photos/lv4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-
-    <img src="photos/lv5.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-
-    <img src="photos/lv6.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-
-    <img src="photos/lv7.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-
-    <img src="photos/lv8.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-
-    <img src="photos/lv9.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-
-    <img src="photos/lv10.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-
-    <img src="photos/lv11.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-
-
-
-</div>
-<button class="right" onclick="rightScroll()"><img src="rightarrow.png" alt="" style="max-height:50px;"></button>
-</div>
-
-<div id="myModal" class="modal mx-auto">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 11</div>
-      <img src="photos/lv1.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 11</div>
-      <img src="photos/lv2.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 11</div>
-      <img src="photos/lv3.jpg" style="width:100%" class="mx-auto">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 11</div>
-      <img src="photos/lv4.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5 / 11</div>
-      <img src="photos/lv5.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 11</div>
-      <img src="photos/lv6.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">7 / 11</div>
-      <img src="photos/lv7.jpg" style="width:100%" class="mx-auto">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">8 / 11</div>
-      <img src="photos/lv8.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">9 / 11</div>
-      <img src="photos/lv9.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">10 / 11</div>
-      <img src="photos/lv10.jpg" style="width:100%" class="mx-auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">11 / 11</div>
-      <img src="photos/lv11.jpg" style="width:100%" class="mx-auto">
-    </div>
-  
-    
-    <span class="prev" onclick="plusSlides(-1)"><img src="leftarrowwhite.png" alt="" class="pointer"></span>
-    <span class="next" onclick="plusSlides(1)"><img src="rightarrowwhite.png" alt="" class="pointer"></span>
-
-
-    <!-- <div class="column">
-      <img class="demo cursor" src="photos/lv1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/lv2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/lv3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="photos/lv4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div> -->
-  </div>
-</div>
-    </div>
-  </div>
-  </row>
-</div>
-
-<!-- testimonials -->
-<a name="testimonials"></a>
-<div id="testimonials" class="content">
-  <h3>The Testimonials</h3>
-  <hr>
-  <div class="row">
-    <div class="col-xl-6">
-      <div class="testimonial">
-          <p class="quote">"Cedric and the entire Fruition crew deliver on an unforgettable experience. A meal where every single dish tells a story and leaves you completely satisfied. A dining experience you will never forget, filled with conversation and joy."</p>
-          <p class="signed">&#8213;Justin Waterfield</p>
-      </div></div>
-      <div class="col-xl-6">
-      <div class="testimonial testimonial-right">
-          <p class="quote">"This dream duo of Magic and food artistry create something that neither could on their own. Between the delightful food, exquisite presentation, and excellent drink pairings, it made for a special evening over tableside chatter about all things Magic. Don't miss this lifelong journey of theirs come to fruition - your taste buds will thank you!"</p>
-          <p class="signed">&#8213;Gavin Verhey</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- about -->
-<!-- <a name="about"></a>
+<a name="about"></a>
 <div id="about" class="content">
   <h3>About Us</h3>
   <hr>
@@ -311,7 +166,7 @@
       <p>How's it all work? Scroll down just a tad to learn more.</p>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- guests -->
 <a name="guests"></a>
@@ -429,7 +284,7 @@
     </div>
 </div>
 
-<!-- <a name="experience"></a>
+<a name="experience"></a>
 <div id="experience" class="content">
     <h3>Join Us</h3>
     <hr>
@@ -447,7 +302,7 @@
             <p>Please email <i><b>cedricaphillips at gmail dot com</b></i> to book your reservation.</p>
         </div>
     </div>
-</div> -->
+</div>
 
 
 
@@ -458,51 +313,7 @@
 
 </body>
 
-<script>
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-  
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
 
-  function leftScroll() {
-        const left = document.querySelector(".gallery");
-        left.scrollBy(-300, 0);
-      }
-      function rightScroll() {
-        const right = document.querySelector(".gallery");
-        right.scrollBy(300, 0);
-      }
-  </script>
 
 
 
