@@ -104,6 +104,15 @@ h5 {
     max-height:400px;
     
 }
+
+.photo-left {
+  margin: 15px 25px 15px 0px;
+  max-width: 35%;
+  min-width: 100px;
+  border-radius:8%;
+  max-height:400px;
+}
+
 .menu {
     font-style:italic;
     font-size:larger;
@@ -359,4 +368,34 @@ h5 {
       .pointer {
         max-height:70px;
       }
+    }
+
+    /* for the header image on the home page */
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photos/banner.jpg");
+      height:150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+      top:0;
+      width:100%;
+      z-index:1;
+    }
+
+    .home-nav {
+      position:fixed;
+      top:150px;
+      margin-bottom: 150px;
+    }
+
+    /* style the links to event pages */
+
+    .button-link:hover {
+      color:black;
+      background-color:white;
+      border-color:black;
+      border-style:solid;
+      border-width:1px;
     }
