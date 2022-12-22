@@ -113,6 +113,14 @@ h5 {
   max-height:400px;
 }
 
+.photo-column {
+  border-radius:8%;
+  text-align: center;
+  margin:auto;
+  width:95%;
+  margin:15px 0;
+}
+
 .menu {
     font-style:italic;
     font-size:larger;
