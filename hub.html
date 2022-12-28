@@ -60,7 +60,8 @@
         let params = window.location.href.split('?')[1];
         let paramsObject = new URLSearchParams(params);
         if (paramsObject.get('contact') === 'true') {
-            document.getElementById('contactSuccess').innerHTML = 'Message sent';
+            document.getElementById('contactSuccess').innerHTML = '<p>Message sent</p>';
+            setTimeout( () => {document.getElementById('contactSuccess').innerHTML = ''}, 5000)
         }
     };
 </script>
@@ -302,7 +303,7 @@
 <div id="contact" class="content">
   <h3>Contact Us</h3>
   <hr>
-  <div id="contactSuccess"></div>
+  <div id="contactSuccess" class="contact-success"></div>
   <div class="row">
     <div class="col-12">
 

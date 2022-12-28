@@ -407,3 +407,19 @@ h5 {
       border-style:solid;
       border-width:1px;
     }
+
+    /* the contact form success display */
+    .contact-success {
+      display:inline;
+      position:absolute;
+      border-width: 1px;
+      border-radius:15px;
+      background-color: rgb(0, 128, 0);
+      margin:auto;
+      color:white;
+      left:45.3%;
+    }
+
+    .contact-success p {
+      margin:10px;
+    }
