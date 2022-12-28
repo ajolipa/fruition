@@ -53,6 +53,17 @@
 }
 
 </style>
+
+<script>
+    // if the contact form has been submitted, display a success popup
+    window.onload = function contactSuccess() {
+        let params = window.location.href.split('?')[1];
+        let paramsObject = new URLSearchParams(params);
+        if (paramsObject.get('contact') === 'true') {
+            document.getElementById('contactSuccess').innerHTML = 'Message sent';
+        }
+    };
+</script>
 </head>
 <body>
 <!-- header and navigation -->
@@ -291,9 +302,27 @@
 <div id="contact" class="content">
   <h3>Contact Us</h3>
   <hr>
+  <div id="contactSuccess"></div>
   <div class="row">
     <div class="col-12">
-        <p>Coming soon.</p>
+
+            <form action="https://api.sheetmonkey.io/form/5HmAZ3X1PMvzSsCNpCGhgs" method="post">
+                <!-- Put HTML input fields in here and see how they fill up your sheet -->
+                <div class="form-group" style="margin-bottom:20px; max-width:200px;">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                <div class="form-group" style="margin-bottom:20px; max-width:200px;">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group" style="margin-bottom:20px;">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" class="form-control" rows="6" required></textarea>
+                  </div>
+                <input type="hidden" name="date" value="x-sheetmonkey-current-date-time" />
+                <button type="submit" class="btn btn-dark" style="margin-bottom:20px;">Submit</button>
+              </form>
       </div>
   </div>
 </div>
