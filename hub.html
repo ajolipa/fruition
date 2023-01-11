@@ -61,7 +61,11 @@
         let paramsObject = new URLSearchParams(params);
         if (paramsObject.get('contact') === 'true') {
             document.getElementById('contactSuccess').innerHTML = '<p>Message sent</p>';
-            setTimeout( () => {document.getElementById('contactSuccess').innerHTML = ''}, 5000)
+            setTimeout( () => {document.getElementById('contactSuccess').innerHTML = ''}, 5000);
+        }
+        else if (paramsObject.get('contact') === 'false') {
+          document.getElementById('contactSuccess').innerHTML = '<p>Error. Please try again.</p>';
+            setTimeout( () => {document.getElementById('contactSuccess').innerHTML = ''}, 5000);
         }
     };
 </script>
@@ -306,8 +310,8 @@
   <div id="contactSuccess" class="contact-success bg-dark"></div>
   <div class="row">
     <div class="col-12">
-
-            <form action="https://api.sheetmonkey.io/form/5HmAZ3X1PMvzSsCNpCGhgs" method="post">
+            <form action="processmessage.php" method="post">
+            <!-- <form action="https://api.sheetmonkey.io/form/5HmAZ3X1PMvzSsCNpCGhgs" method="post"> -->
                 <!-- Put HTML input fields in here and see how they fill up your sheet -->
                 <div class="form-group" style="margin-bottom:20px; max-width:200px;">
                     <label for="name">Your Name:</label>
@@ -322,7 +326,7 @@
                     <textarea name="message" id="message" class="form-control" rows="6" required></textarea>
                   </div>
                 <input type="hidden" name="date" value="x-sheetmonkey-current-date-time" />
-                <button type="submit" class="btn btn-dark" style="margin-bottom:20px;">Submit</button>
+                <button type="submit" class="btn btn-dark" style="margin-bottom:20px;" name="submit" id="submit" value="submit">Submit</button>
               </form>
       </div>
   </div>
